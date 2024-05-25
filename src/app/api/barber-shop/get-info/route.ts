@@ -1,0 +1,20 @@
+import { NextResponse } from "next/server";
+import { db } from "@/lib/db";
+import { format } from "date-fns";
+import { getServerSession } from "next-auth";
+import { nextAuthOptions } from "@/app/api/auth/[...nextauth]/route";
+
+export async function GET(req: Request) {
+    try {
+        const barberShop = await db.barberShop.findUnique({
+          where: {
+            id: '6651e4e1dabe3cd796c7acbf'
+          },
+        })
+    
+        return NextResponse.json(barberShop)
+    } catch (error) {
+        console.log('BARBERSHOP_INFO_ERROR', error)
+        return new NextResponse('Ocorreu um erro, tente novamente.', { status: 400 })
+    }
+}
