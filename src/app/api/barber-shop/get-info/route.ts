@@ -6,9 +6,9 @@ import { nextAuthOptions } from "@/lib/auth-config";
 
 export async function GET(req: Request) {
     try {
-        const barberShop = await db.barberShop.findUnique({
+        const barberShop = await db.barberShop.findFirst({
           where: {
-            id: '6651e4e1dabe3cd796c7acbf'
+            imutable_id: '1'
           },
         })
     

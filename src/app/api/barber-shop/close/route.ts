@@ -10,9 +10,9 @@ export async function PATCH(req: Request) {
 
         if(!session) return new NextResponse('Você precisa estar logado para realizar essa ação.', { status: 401 })
 
-        const barberShop = await db.barberShop.update({
+        const barberShop = await db.barberShop.updateMany({
           where: {
-            id: '6651e4e1dabe3cd796c7acbf'
+            imutable_id: '1'
           },
           data: {
             isOpen: false

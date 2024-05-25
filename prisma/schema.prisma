@@ -14,15 +14,16 @@ datasource db {
 }
 
 model BarberShop {
-  id         String   @id @default(auto()) @map("_id") @db.ObjectId
-  name       String
-  open_at    String
-  close_at   String
-  picture    String?
-  links      Json[]
-  isOpen     Boolean  @default(false)
-  created_at DateTime @default(now())
-  updated_at DateTime @default(now()) @updatedAt
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  imutable_id String   @default("1")
+  name        String
+  open_at     String
+  close_at    String
+  picture     String?
+  links       Json[]
+  isOpen      Boolean  @default(false)
+  created_at  DateTime @default(now())
+  updated_at  DateTime @default(now()) @updatedAt
 
   @@map("barberShop")
 }
