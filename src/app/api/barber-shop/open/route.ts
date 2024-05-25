@@ -15,7 +15,7 @@ export async function PATCH(req: Request) {
               imutable_id: '1'
             },
             data: {
-              isOpen: false
+              isOpen: true
             }
           })
     
