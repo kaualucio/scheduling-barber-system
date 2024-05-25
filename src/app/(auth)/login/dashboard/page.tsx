@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Scissors } from "lucide-react";
 import { LoginForm } from "./_components/login-form";
 import { getServerSession } from "next-auth";
-import { nextAuthOptions } from "@/app/api/auth/[...nextauth]/route";
+import { nextAuthOptions } from "@/lib/auth-config";
 import { redirect } from "next/navigation";
 
 export default async function LoginDashboard() {

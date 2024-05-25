@@ -2,7 +2,7 @@ import { Title } from "@/components/title";
 import { db } from "@/lib/db";
 import { BarberTable } from "./_components/barber-table";
 import { getServerSession } from "next-auth";
-import { nextAuthOptions } from "@/app/api/auth/[...nextauth]/route";
+import { nextAuthOptions } from "@/lib/auth-config";
 
 
 export default async function Agenda({ searchParams }: { searchParams: { name: string, phone_number: string, status: string } }) {

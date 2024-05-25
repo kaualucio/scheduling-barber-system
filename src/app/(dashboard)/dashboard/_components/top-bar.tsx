@@ -3,7 +3,7 @@ import { MobileSidebar } from './mobile-sidebar'
 import { Profile } from './profile'
 import { OpenBarberShop } from './open-barber-shop'
 import { getServerSession } from 'next-auth'
-import { nextAuthOptions } from '@/app/api/auth/[...nextauth]/route'
+import { nextAuthOptions } from '@/lib/auth-config'
 import { db } from '@/lib/db'
 
 export const TopBar = async () => {

@@ -6,7 +6,7 @@ async function main() {
       name: 'Barbearia Nova',
       open_at: '07:00',
       close_at: '20:00',
-      picture: null,
+      picture: 'https://files.edgestore.dev/sbc5p8nrz7wz0e65/publicFiles/_public/82a42e49-9c3e-438e-8ce1-e4e9a4717ce8.jpg',
       isOpen: false
     }
   })
