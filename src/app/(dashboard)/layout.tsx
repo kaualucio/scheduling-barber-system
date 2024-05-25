@@ -4,7 +4,7 @@ import { Sidebar } from "./dashboard/_components/sidebar";
 import { TopBar } from "./dashboard/_components/top-bar";
 import { EdgeStoreProvider } from '@/lib/edgestore';
 import { getServerSession } from "next-auth";
-import { nextAuthOptions } from "../api/auth/[...nextauth]/route";
+import { nextAuthOptions } from "@/lib/auth-config";
 import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {

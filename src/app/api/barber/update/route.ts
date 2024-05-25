@@ -1,7 +1,7 @@
 import { db } from "@/lib/db"
 import { getServerSession } from "next-auth"
 import { NextResponse } from "next/server"
-import { nextAuthOptions } from "../../auth/[...nextauth]/route"
+import { nextAuthOptions } from "@/lib/auth-config"
 import { hash } from "bcryptjs"
 
 
